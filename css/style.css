@@ -1,0 +1,1308 @@
+/* ------------------ GOOGLE FONTS ------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+/* ------------------ VARIABLES ------------------ */
+
+:root {
+
+    /* ---------- Colors ---------- */
+    --primary-color: #D1B0FB;
+    --secondary-color: #46399C;
+    --text-light: #EDEDED;
+    --text-dark: #130E79;
+
+    /* ---------- Typography ---------- */
+    --h1: 76px;
+    --h2: 36px;
+    --h3: 30px;
+    --body: 20px;
+
+    /* ---------- Layout ------------ */
+    --width: 80%;
+}
+
+body {
+    font-family: "Syne", sans-serif;
+    font-size: var(--body);
+    color: var(--text-dark);
+    background-color: #130E79;
+    overflow-x: hidden;
+}
+
+
+.container-layout {
+    width: var(--width);
+    margin: 0 auto;
+}
+
+/* --------------   HEADER --------------- */
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    height: 52px;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.volunteers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    position: relative;
+    top: 1px;
+}
+
+.apply-mobile {
+    display: none;
+}
+
+.menu {
+    display: none;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.menu img {
+    width: 25px;
+    height: auto;
+}
+
+.overlay-menu {
+    visibility: hidden;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    transition: transform .2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 6em;
+}
+
+.overlay-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay-links .nav-link {
+    margin: 0;
+    margin-bottom: .3em;
+    font-size: 20px;
+    width: 100%;
+    left: 0;
+    color: var(--text-dark);
+}
+
+.register-data {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-data p {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background-color: #FFDC62;
+    color: var(--text-dark);
+    bottom: 0em;
+    margin: 0;
+    margin-top: .5em;
+}
+
+.register-data a {
+    position: fixed;
+    width: 80%;
+    bottom: 70px;
+}
+
+.register-data a button {
+    width: 100%;
+}
+
+.active {
+    transform: translateY(0);
+    transition: transform .2s ease;
+}
+
+/* --------------   NAVIGATION --------------- */
+
+nav {
+    position: fixed;
+    height: 86px;
+    width: 100%;
+    top: 52px;
+    z-index: 99;
+    color: var(--text-light);
+    background-color: var(--text-dark);
+}
+
+.nav-layout {
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: var(--text-light);
+    position: relative;
+    left: -24px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    letter-spacing: 0.5px;
+    transition: .1s ease-in;
+}
+
+.nav-link:hover {
+    background-color: #3A71EF;
+    border-radius: 30px;
+    transition: .1s ease-in;
+}
+
+nav p {
+    color: #FFDC62;
+    margin-right: 1em;
+}
+
+.apply {
+    color: var(--text-dark);
+}
+
+.register {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    background-color: #fcfcfc;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: .1s ease-in;
+}
+
+nav button:hover {
+    background-color: #3A71EF;
+    border-radius: 30px;
+    transition: .1s ease-in;
+    color: var(--text-light);
+}
+
+.nav-logo {
+    display: none;
+}
+
+/* --------------   HERO SECTION --------------- */
+
+.hero-section {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.hero-section img {
+    width: 100%;
+    margin-top: 15em;
+    max-height: 710px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: var(--h1);
+    font-weight: 700;
+    width: 14ch;
+}
+
+h2 {
+    font-size: var(--h2);
+    margin-bottom: 20px;
+}
+
+/* --------------   FESTIVAL --------------- */
+
+.festival {
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6em;
+    margin-bottom: 6em;
+}
+
+h3 {
+    font-size: var(--h3);
+    line-height: 36px;
+    font-weight: 700;
+    width: 22ch;
+    margin-bottom: 40px;
+}
+
+.column-left {
+    color: var(--text-light);
+    letter-spacing: 0.3px;
+    line-height: 26px;
+    width: 50%;
+    padding-right: 4em;
+}
+
+.column-right {
+    letter-spacing: 0.3px;
+    line-height: 26px;
+    padding-left: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.second-paragraph {
+    margin-bottom: 20px;
+}
+
+.festival button {
+    text-decoration: underline;
+    padding: 0;
+    font-size: 20px;
+}
+
+.festival button:hover {
+    opacity: 0.7;
+}
+
+/* --------------   GUESTS --------------- */
+
+.guests {
+    padding-bottom: 6em;
+    padding-top: 6em;
+}
+
+.sub-section {
+    color: var(--text-light);
+    letter-spacing: 0.3px;
+    line-height: 26px;
+    width: 100%;
+}
+
+.sub-section h3 {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    letter-spacing: 0.3px;
+    line-height: 26px;
+}
+
+.sub-section p {
+    width: 38%;
+}
+
+.card-group {
+    padding-top: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.guest-card {
+    border-radius: 4px;
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E9E9E9;
+    width: 25%;
+}
+
+.guest-card img {
+    width: 100%;
+    height: auto;
+}
+
+.guestname {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.guestrole {
+    margin-bottom: 30px;
+}
+
+/* --------------   GALLERY --------------- */
+
+.gallery {
+    overflow-x: hidden;
+    position: relative;
+    background-color: #46399C;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.gallery-content {
+    width: var(--width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.gallery-text {
+    width: var(--width);
+    margin: 0 auto;
+    color: #fcfcfc;
+    margin-bottom: 4em;
+}
+
+.gallery-text h3 {
+    margin-bottom: .5em;
+}
+
+.gallery-text p {
+    width: 50ch;
+    line-height: 150%;
+}
+
+.gallery-image {
+    margin-bottom: 1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery-image::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    content: '';
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FCFCFC;
+    background-color: #46399ca6;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+/* .lg-image {
+    max-width: 800px !important;
+} */
+
+.lg-backdrop.in {
+    opacity: 0.8 !important;
+}
+
+.gallery-image:hover::before {
+    opacity: 1;
+    transition: .2s ease;
+}
+
+.gallery-thumbnail {
+    width: 100%;
+}
+
+
+/* --------------   TESTIMONIALS --------------- */
+
+.testimonials {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+.testimonials-text {
+    width: var(--width);
+    margin: 0 auto 2em auto;
+}
+
+.testimonials-text h3 {
+    margin-bottom: .5em;
+}
+
+.testimonials-text p {
+    width: 45ch;
+    line-height: 150%;
+}
+
+.owl-carousel {
+    margin-left: 10%;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    position: relative;
+}
+
+.testimonial-card {
+    border-radius: 4px;
+    max-width: 650px;
+    background-color: #E9E9E9;
+    height: 250px;
+    padding: 2em 4em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.testimonial-card .quote {
+    display: flex;
+    align-items: flex-start;
+}
+
+.testimonial-card .quote img {
+    width: 30px;
+    margin-right: 2em;
+    height: auto;
+}
+
+.quote-text {
+    color: #130E79;
+    font-size: 20px;
+    line-height: 150%;
+    position: relative;
+    top: -5px;
+    letter-spacing: .5px;
+}
+
+.guest-name {
+    color: #130E79;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#prev {
+    display: none;
+}
+
+#next {
+    width: 70px;
+    height: 70px;
+    background: #fcfcfc;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20%;
+    top: -110px;
+}
+
+#next img {
+    width: 40px;
+}
+
+/* --------------   CONTACT --------------- */
+
+.contact {
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background-color: #46399C;
+    color: var(--text-light);
+    letter-spacing: 0.3px;
+    line-height: 26px;
+    overflow-x: hidden;
+}
+
+.contact-content {
+    width: var(--width);
+    margin: 0 auto;
+}
+
+.contact-text {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.contact-text p {
+    margin-right: 6em;
+    white-space: nowrap;
+}
+
+.contact h3 {
+    margin-bottom: 20px;
+}
+
+
+.gmap_canvas {
+    background: none !important;
+    height: 303px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 303px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-light);
+    width: var(--width);
+    margin: 0 auto;
+    padding: 2em 0;
+    letter-spacing: 0.3px;
+    line-height: 26px;
+}
+
+footer p {
+    width: fit-content;
+}
+
+footer a {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.sociallink {
+    max-width: 40px;
+    margin-right: 20px;
+}
+
+/* --------------   REGISTER PAGE --------------- */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: var(--width);
+    margin: 0 auto;
+    padding-top: 10em;
+    padding-bottom: 8em;
+}
+
+.card1 {
+    background-image: url("../assets/banner.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    min-width: 380px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FCFCFC;
+    width: 52%;
+    height: 300px;
+    border-radius: 20px;
+    color: #212121;
+    padding: 2em 3em;
+}
+
+.card2 h3 {
+    width: 100%;
+}
+
+.info-title {
+    white-space: nowrap;
+}
+
+.card2-content {
+    display: flex;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.card2-details {
+    margin-right: 15%;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.info-title {
+    font-weight: 600;
+    margin-bottom: 0.2em;
+}
+
+.register-btn {
+    background-color: #EEEEEE;
+    color: #989797;
+    width: auto;
+    min-height: 60px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+.faq {
+    background-color: #46399C;
+}
+
+/* -------------- RESPONSIVE STYLING --------------- */
+
+@media only screen and (max-width: 1366px) {
+
+    /* NAV */
+    .nav-link {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .register button {
+        font-size: 14px;
+    }
+
+    .register p {
+        font-size: 16px;
+    }
+
+    /* HERO */
+
+    .hero-section img {
+        margin-top: 10em;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero-text {
+        top: -5%;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    /* FESTIVAL */
+
+    .column-left {
+        padding-right: 2em;
+    }
+
+
+    .column-left h3 {
+        width: 19ch;
+    }
+
+    .column-left p {
+        font-size: 18px;
+    }
+
+    .column-right p {
+        font-size: 18px;
+    }
+
+
+    /* GUESTS */
+
+    .sub-section p {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .guest-card {
+        width: 30%;
+    }
+
+    /* TESTIMONIALS */
+}
+
+
+@media only screen and (max-width: 1080px) {
+
+    /* NAV */
+
+    nav {
+        position: fixed;
+        height: 50px;
+    }
+
+    .nav-layout {
+        height: 50px;
+    }
+
+    nav {
+        top: 40px;
+    }
+
+    .nav-layout {
+        justify-content: flex-end;
+        height: 50px;
+    }
+
+    .nav-logo {
+        display: inline;
+        width: 30px;
+        position: absolute;
+        left: 10%;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    header {
+        font-size: 14px !important;
+        height: 40px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .register {
+        display: none;
+    }
+
+    .overlay-menu {
+        visibility: visible;
+    }
+
+
+    /* HERO */
+
+    .hero-section img {
+        margin-top: 5em;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero-text {
+        top: -5%;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+
+    /* GUESTS */
+
+    .sub-section p {
+        width: 70%;
+    }
+
+    .guest-card {
+        padding: 1em;
+    }
+
+    .guestname {
+        font-size: 18px;
+    }
+
+    .guestrole {
+        font-size: 16px;
+    }
+
+    .guestcompany {
+        font-size: 16px;
+    }
+
+    .contact-text p {
+        font-size: 16px;
+        line-height: 150%;
+        white-space: normal !important;
+        margin-right: 0 !important;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    .social-links {
+        margin-top: 1em;
+    }
+
+    /* TESTIMONIALS */
+
+    /* REGISTER */
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card1 {
+        width: 100%;
+        min-width: 100px;
+        height: 250px;
+        margin-bottom: 1em;
+    }
+
+    .card2 {
+        width: 100%;
+        height: auto;
+        padding: 2em;
+    }
+
+    #contact-break {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* HERO */
+
+    .hero-section img {
+        margin-top: 5em;
+        width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+
+    /* FESTIVAL */
+
+    .festival {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .column-left {
+        width: 90%;
+        padding: 0;
+        margin-bottom: 1.5em;
+    }
+
+
+    .column-left h3 {
+        width: 24ch;
+    }
+
+    .column-right {
+        padding: 0;
+        width: 90%;
+    }
+
+    .second-paragraph {
+        margin-bottom: 1.5em;
+    }
+
+    .column-right button {
+        margin-top: 1.5em;
+    }
+
+    /* GUESTS */
+
+    .container-layout {
+        width: 90%;
+    }
+
+    .sub-section p {
+        width: 85%;
+    }
+
+    .card-group {
+        flex-direction: column;
+    }
+
+    .guest-card {
+        padding: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .guest-card img {
+        width: 30%;
+        margin-right: 2em;
+    }
+
+    .guestname {
+        font-size: 22px;
+    }
+
+    .guestrole {
+        font-size: 18px;
+    }
+
+    .guestcompany {
+        font-size: 18px;
+    }
+
+    /* GALLERY */
+    .gallery-content {
+        width: var(--width);
+        grid-template-columns: 1fr;
+        gap: 0;
+        row-gap: 1em;
+    }
+
+    .gallery-image {
+        max-height: 200px;
+    }
+
+    /* TESTIMONIALS */
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    /* FESTIVAL */
+
+    .column-left h3 {
+        width: 18ch;
+        margin-top: 4em;
+    }
+
+    /* GUESTS */
+
+    .guestname {
+        font-size: 18px;
+    }
+
+    .guestrole {
+        font-size: 16px;
+    }
+
+    .guestcompany {
+        font-size: 16px;
+    }
+
+    /* TESTIMONIALS */
+
+    .dec-element {
+        opacity: 0.2;
+    }
+
+    /* GALLERY */
+
+    .gallery-text p {
+        width: auto;
+        font-size: 18px;
+    }
+
+    .gallery {
+        padding-top: 4em;
+    }
+
+    .gallery-text h3 {
+        font-size: var(--h3);
+    }
+
+
+    .register-btn {
+        font-size: 16px;
+        min-height: 54px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial-card {
+        max-width: 300px !important;
+        padding: 2em;
+    }
+
+    .quote {
+        flex-direction: column;
+    }
+
+    .testimonial-card .quote img {
+        width: 24px;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .quote-text {
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0;
+    }
+
+    .testimonials-text p {
+        width: 40ch;
+        font-size: 16px;
+    }
+
+    .testimonials {
+        padding: 4em 0;
+    }
+
+    .guest-name {
+        font-size: 18px;
+    }
+
+    #next {
+        width: 40px;
+        height: 40px;
+        background: #fcfcfc;
+        border-radius: 50%;
+        color: #fff;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -140px;
+    }
+
+    #next img {
+        width: 25px;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+
+    /* NAV */
+
+    .apply-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+        color: var(--text-dark);
+    }
+
+    .apply-mobile img {
+        position: relative;
+        transform: scale(0.9);
+        top: -1px;
+    }
+
+    .apply-mobile:focus {
+        color: var(--text-dark);
+    }
+
+    .apply {
+        display: none;
+    }
+
+    header p {
+        display: none;
+    }
+
+    header {
+        font-size: 12px !important;
+        height: 40px;
+    }
+
+    .overlay-menu {
+        visibility: visible;
+    }
+
+    /* HERO */
+
+    .hero-section img {
+        position: relative;
+        width: 100%;
+    }
+
+    .hero-text {
+        top: -20%;
+    }
+
+    .hero-text h2 {
+        font-size: 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    /* FESTIVAL */
+
+    .column-left h3 {
+        font-size: 20px;
+        width: fit-content;
+        line-height: 150%;
+    }
+
+    .festival p {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    /* GUESTS */
+
+    .guests {
+        padding-bottom: 3em;
+    }
+
+    .card-group {
+        padding-top: 1.5em;
+    }
+
+    .sub-section p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+
+    .sub-section h3 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .guest-card {
+        padding: .5em;
+    }
+
+    .guestname {
+        font-size: 16px;
+        margin: 1em 0;
+    }
+
+    .guestrole {
+        font-size: 14px;
+        margin: 1em 0;
+    }
+
+    .guestcompany {
+        font-size: 14px;
+    }
+
+    .guest-card img {
+        width: 45%;
+        margin-right: 1em;
+    }
+
+    .cards {
+        padding: 6em 0;
+    }
+
+    .card1 {
+        height: 100px;
+    }
+
+    .card2 {
+        padding: 1em;
+    }
+
+    .card2 h3 {
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .card2-content {
+        flex-direction: column;
+    }
+
+    .card2-content div {
+        margin-bottom: 1em;
+    }
+
+    /* GALLERY */
+
+    .gallery-image {
+        max-height: 150px;
+    }
+
+
+    .testimonials-text p {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .testimonials {
+        padding: 4em 0;
+    }
+
+    .guest-name {
+        font-size: 18px;
+    }
+
+    #next {
+        width: 50px;
+        height: 50px;
+        background: #fcfcfc;
+        border-radius: 50%;
+        color: #fff;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #130E79;
+        right: 30%;
+        top: -25px;
+    }
+
+    #next img {
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .testimonial-card {
+        max-width: 280px !important;
+    }
+}
