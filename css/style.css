@@ -1266,11 +1266,23 @@ footer a:hover {
     .gallery-image {
         max-height: 150px;
     }
+    
+    .gallery-text p {
+        font-size: 14px;
+    }
+    
+    .gallery-text h3 {
+        font-size: 20px;
+    }
 
 
     .testimonials-text p {
         width: auto;
-        font-size: 16px;
+        font-size: 14px;
+    }
+    
+    .testimonials-text h3 {
+        font-size: 20px;
     }
 
     .testimonials {
