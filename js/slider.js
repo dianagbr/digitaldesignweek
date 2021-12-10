@@ -8,7 +8,7 @@ $(".owl-carousel").owlCarousel({
   nav: true,
   navText: [
     "<span id='prev'></span>",
-    "<span id='next'><img src='../assets/arrow-right.svg' alt='arrow'/></span>",
+    "<span id='next'><img src='./assets/arrow-right.svg' alt='arrow'/></span>",
   ],
   responsive: {
     0: {
