@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Design Week 2021 - Register</title>
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER & NAV -->
+
+    <header>
+        <div class="container-layout volunteers">
+            <p>VOLUNTEER ROLES ARE NOW OPEN</p>
+            <a href="https://forms.gle/SZijHB4stqBnsCuo7" class="apply" target="_blank">APPLY NOW <img class="arrow"
+                    src="./assets/arrow.svg" alt="arrow"/>
+            </a>
+            <a href="https://forms.gle/SZijHB4stqBnsCuo7" class="apply-mobile" target="_blank">VOLUNTEER ROLES ARE NOW
+                OPEN &nbsp;<img class="arrow" src="./assets/arrow.svg" alt="arrow"/>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <div class="container-layout nav-layout">
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">FESTIVAL</a>
+                <a class="nav-link" href="index.html#guests">GUESTS</a>
+                <a class="nav-link" href="index.html#gallery">GALLERY</a>
+                <a class="nav-link" href="index.html#testimonials">TESTIMONIALS</a>
+                <a class="nav-link" href="index.html#contact">CONTACT</a>
+            </div>
+            <div class="register">
+                <p>December 5-11</p>
+                <a href="register.html"><button>REGISTER</button></a>
+            </div>
+            <div class="menu">
+                <img src="./assets/menu.svg" alt="menu" />
+                <img onclick="scrollToTop()" src="./assets/logo.svg" class="nav-logo" alt="logo" />
+            </div>
+            <div class="overlay-menu">
+                <div class="overlay-links">
+                    <a href="index.html" class="nav-link nav-link-mobile">FESTIVAL</a>
+                    <a href="index.html#guests" class="nav-link nav-link-mobile">GUESTS</a>
+                    <a href="index.html#gallery" class="nav-link nav-link-mobile">GALLERY</a>
+                    <a href="index.html#testimonials" class="nav-link nav-link-mobile">TESTIMONIALS</a>
+                    <a href="index.html#contact" class="nav-link nav-link-mobile">CONTACT</a>
+                </div>
+                <div class="register-data">
+                    <a href="register.html"><button>REGISTER</button></a>
+                    <p>December 5-11</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- REGISTRATION CARDS -->
+
+    <section class="cards">
+        <div class="card1">
+        </div>
+        <div class="card2">
+            <h3>Cluj-Napoca Digital Design Week 2021</h3>
+            <div class="card2-content">
+                <div class="card2-details">
+                    <p class="info-title">START TIME</p>
+                    <p>5 Dec, 13:00 PM</p>
+                </div>
+                <div class="card2-details">
+                    <p class="info-title">END TIME</p>
+                    <p>11 Dec, 18:00 PM</p>
+                </div>
+                <div class="card2-details">
+                    <p class="info-title">PRICE</p>
+                    <p>Free</p>
+                </div>
+            </div>
+            <button class="register-btn">Registration is now closed</button>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Do I need to
+                            register to attend DDW?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>Well, DDW is not a real event, however if it were you surely would have had to click on the
+                            register button to attend.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What can I
+                            expect from DDW?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>You can expect to hear about industry's latest from renowned guests and to be presented with
+                            opportunities to network with other attendees.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What is expected
+                            of me?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>We expect you to be respectful of other attendees and guests and to not encourage
+                            self-promotion and spam.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Will the event
+                            be recorded?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>Unfortunately recording is not possible, you have to take part in the live event in order to
+                            see everything DDW has in store this year.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How can I
+                            volunteer?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>You can apply for a volunteer role by completing a short Google form. You can find the link
+                            at the top of every page of the website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-links">
+            <a rel="noreferrer" href="https://twitter.com/Twitter" target="_blank"><img class="sociallink" src="assets/twitter.svg"
+                    alt="twitter"></a>
+            <a rel="noreferrer" href="https://www.facebook.com/facebookapp" target="_blank"><img class="sociallink"
+                    src="assets/facebook.svg" alt="facebook"></a>
+            <a rel="noreferrer" href="https://www.instagram.com/instagram" target="_blank"><img class="sociallink"
+                    src="assets/instagram.svg" alt="instagram"></a>
+        </div>
+        <p>Any questions? Reach us at <a href="mailto:ddw-clujnapoca@email.com"><br />ddw-clujnapoca@email.com</a></p>
+    </footer>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/accordion.js"></script>
+</body>
+
+</html>
